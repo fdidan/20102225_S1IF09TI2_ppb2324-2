@@ -7,6 +7,7 @@ import 'package:praktikum6/ui/home_screen.dart';
 import 'package:praktikum6/ui/phone_auth_screen.dart';
 import 'package:praktikum6/utils/routes.dart';
 
+
 class LoginScreen extends StatefulWidget{
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -30,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen>{
     return await FirebaseAuth.instance.signInWithCredential(credential).then(
       (value) async => await Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (context) => HomeScreen()),
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
         (route) => false));
   }
 
