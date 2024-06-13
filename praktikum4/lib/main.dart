@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 void main(){
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget{
                   //image
                   Container(
                     padding: EdgeInsets.all(20),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.lightBlueAccent
                     ),
@@ -40,17 +39,17 @@ class MyApp extends StatelessWidget{
                   SizedBox(height: 15,),
 
                   //Nama
-                  Text("Alfan Didan", style: TextStyle(
+                  const Text("Alfan Didan", style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     ),),
                     SizedBox(height: 5,),
-                    Text("20102225", style: TextStyle(
+                    const Text("20102225", style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),),
                     SizedBox(height: 5,),
-                    Text("Mahasiswa", style: TextStyle(
+                    const Text("Mahasiswa", style: TextStyle(
                       color: Colors.white,
                     ),)
                 ],
@@ -65,7 +64,7 @@ class MyApp extends StatelessWidget{
                 borderRadius: BorderRadius.circular(10),
                 color: Color(0xffFEF4F3)
               ),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Data Diri", style: TextStyle(
@@ -118,7 +117,7 @@ class MyApp extends StatelessWidget{
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Pusat Bantuan", style: TextStyle(
+                  const Text("Pusat Bantuan", style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.pinkAccent,
                   ),),
